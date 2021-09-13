@@ -1,0 +1,86 @@
+<div class="nav-bar fixed-top">
+  <ul>
+        <li class="nav-item">
+                <%= link_to "OpenSea", "#", class: "nav-link" %>
+        </li>
+
+        <li class="nav-item">
+            <%= link_to "Discord", "#", class: "nav-link" %>
+        </li>
+
+        <li class="nav-item">
+            <%= link_to "Twitter", "#", class: "nav-link" %>
+        </li>
+        
+        <li class="nav-item">
+            <%= link_to "Instagram", "#", class: "nav-link" %>
+        </li>
+        
+   </ul>
+
+</div>
+
+<div class="centered">
+<h1>
+The W Club
+</h1>
+<p class="line"></p>__  __   __</p>
+
+<h2 id="typingHeadline"> 
+</h2>
+
+<h3>
+No more than 8888 words will ever be minted. Everyday, new words are publicly released on OpenSea, at random times, at a fixed equal price of 0.002 ETH (no gas fee, stored on Polygon).
+</h3>
+
+<p>
+They are available as a 'First-come-first-served' basis.
+</p>
+
+<div class="container">
+    <div class="row">
+             <div class="col-sm-8 col-md-6">
+                <a href="#" class="btn btn-dark" >Acquire your Ws on OpenSea</a>
+     </div>
+            <div class="col-sm-4 col-md-6">
+                <a href="#"class="btn btn-dark">Join the Discord</a>
+            </div>
+
+    </div>
+</div>
+
+
+<h1 class="line">
+__  __   __
+</h1>
+
+<p>
+Distribution: maximum supply of 8888 words.
+</p>
+
+
+<p>
+- 1000 words are given away for free to the first 100 wembers (this is how W club members are called).
+</p>
+
+
+</div>
+
+<script>
+    var i = 0;
+    var txt = 'The W club is just words. Make them yours.'; /* The text */
+    var speed = 40; /* The speed/duration of the effect in milliseconds */
+    var hold = 1000
+    function typeWriter() {
+        if (i == txt.length) {
+            document.getElementById("typingHeadline").innerHTML = ""
+            i = 0
+        }
+        if (i < txt.length) {
+            document.getElementById("typingHeadline").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, i == txt.length ? hold : speed);
+        } 
+    }
+    typeWriter()
+</script>
