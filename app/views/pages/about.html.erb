@@ -22,14 +22,15 @@
 
 <div class="centered">
             <h1>
-                The W Club
+                The W club
+                
             </h1>
     
     <p class="line center">
-__  __   __
+__   __    __
 </p>
 
-     <h2 id="typingHeadline"> </h2>
+     <h2 class="typed-headline" id="typingHeadline"> </h2>
 
         <h3>
         No more than 8888 words will ever be minted. Everyday, new words are publicly released on OpenSea, at random times, at a fixed equal price of 0.002 ETH (no gas fee, stored on Polygon).
@@ -43,11 +44,11 @@ __  __   __
           <div class="row">
     
             <div class="col-sm-8 col-md-6">
-                <a href=" https://opensea.io/collection/w-club" class="btn btn-dark"> Acquire your Ws on OpenSea</a>
+                <a href=" https://opensea.io/collection/w-club" target="_blank" class="btn btn-dark"> Acquire your Ws on OpenSea</a>
             </div>
 
             <div class="col-sm-4 col-md-6">
-                <a href="https://discord.com/invite/6KyYkuQSyW"class="btn btn-dark ola">Join the Discord</a>
+                <a href="https://discord.com/invite/6KyYkuQSyW" target="_blank" class="btn btn-dark ola">Join the Discord</a>
             </div>  
 
         </div>     
@@ -57,7 +58,7 @@ __  __   __
 </div>
 
 <p class="line center">
-__  __   __
+__   __    __
 </p>
 
 
@@ -69,27 +70,28 @@ __  __   __
 <br>
  <p class="centered"> - 1000 words are given away for free to the first 100 wembers (this is how W club members are called). </p>
    <div class="justify-left centered">
-        <br>= 5 Wnfts to each wember:
-        <br>2 when entering the club
+        = 5 Wnfts to each wember:
+        <div class="margin-left">
+        2 when entering the club
         <br>3rd one to be deposited on October 15th, 2021
         <br> 4th one to be deposited on December 15th, 2021
         <br> 5th one to be deposited on February 15th, 2022
+        </div>
     </div>
     
-    
-        <br> <br>
+        <br> 
 
                 <p class="centered"> 
                 - 1000 words are reserved to grow the project: reward active wembers, reward developers that grow the W ecosystem, attract new partners, host giveaways etc...
-                </p>
+                </p> <br>
 
                 <p class="centered"> 
                 - 6888 words will be released at an equal fixed price of 0.002 ETH (no gas fee, stored on Polygon).
-                </p>
+                </p><br>
 
                 <p class="centered"> 
                 Roadmap: The 8888 words will be minted and released everyday, at random times, between September 8th 2021 to April 14th 2022.
-                </p>
+                </p><br>
 
 </div>
 
@@ -107,7 +109,7 @@ __  __   __
 <script>
     var i = 0;
     var txt = 'The W club is just words. Make them yours.'; /* The text */
-    var speed = 89; /* The speed/duration of the effect in milliseconds */
+    var speed = 80; /* The speed/duration of the effect in milliseconds */
     function typeWriter() {
         if (i < txt.length) {
             document.getElementById("typingHeadline").innerHTML += txt.charAt(i);

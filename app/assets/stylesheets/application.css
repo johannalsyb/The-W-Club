@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+ @media (max-width: 450px) {
+    .typed-headline {
+        font-size: 1.1em;   
+        text-align: center;
+    }
+ }
+ 
+ @media (max-width: 600px) {
+    .typed-headline {
+            font-size: 1.2em;   
+            text-align: center;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+
+    body {
+        margin:15px
+    }
+
+    .footer-copyright{
+        margin-right: -40px;
+        font-size: 13px;
+    }
+
+    .ola{
+        margin-top: -10px;
+    }
+}
+
